@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+:root {
+    --color1: hsl(238, 29%, 16%); /* text */
+    --color2: hsl(14, 88%, 65%); /* text */
+    --color3: hsl(237, 12%, 33%); /* text */
+    --color4: hsl(240, 6%, 50%); /* text */
+    --color5: hsl(273, 75%, 66%); /* bg */
+    --color6: hsl(240, 73%, 65%); /* bg */
+    --color7: hsl(240, 5%, 91%); /* dividers */
+
+    --ff-base: 'Kumbh Sans', sans-serif;
+
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--color5), var(--color6));
+    font-family: var(--ff-base);
+    font-weight: var(--fw-normal);
+    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.card {
+    width: 355px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.img {
+    background: url(../images/bg-pattern-mobile.svg) ;
+}
+
+.line {
+    
+}
+
+.footer {
+    font-size: 11px;
+    text-align: center;
+}
+
+.footer a {
+    color: hsl(228, 45%, 44%);
+}
