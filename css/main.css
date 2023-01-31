@@ -30,18 +30,51 @@ main {
 }
 
 .card {
-    width: 355px;
+    width: 335px;
     background-color: white;
-    padding: 20px;
     border-radius: 20px;
 }
 
+.img-container {
+    height: 150px;
+    position: relative;
+
+    background: url(../images/bg-pattern-mobile.svg) no-repeat center;
+}
+
 .img {
-    background: url(../images/bg-pattern-mobile.svg) ;
+    width: 75%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.content {
+    padding: 0px 30px 40px 30px;
+}
+
+.title {
+    color: var(--color1);
+    font-size: 2.4em;
+    font-weight: var(--fw-bold);
+    text-align: center;
+    margin: 20px;
+}
+
+.subtitle {
+    color: var(--color3);
+    font-weight: var(--fw-normal);
+    font-size: 13px;
+    margin: 16px 0px;
+}
+
+.paragraph {
+    color: var(--color4);
+    display: none;
 }
 
 .line {
-    
+    border: 1px solid var(--color7);
 }
 
 .footer {
