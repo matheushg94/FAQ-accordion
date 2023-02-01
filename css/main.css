@@ -24,7 +24,7 @@ body {
 }
 
 main {
-    min-height: 100vh;
+    min-height: calc(100vh - 32.4px);
     display: grid;
     place-content: center;
 }
@@ -33,17 +33,17 @@ main {
     width: 335px;
     background-color: white;
     border-radius: 20px;
+    margin-top: 120px;
 }
 
 .img-container {
     height: 150px;
     position: relative;
-
     background: url(../images/bg-pattern-mobile.svg) no-repeat center;
 }
 
 .img {
-    width: 75%;
+    width: 71%;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -55,20 +55,40 @@ main {
 
 .title {
     color: var(--color1);
-    font-size: 2.4em;
+    font-size: 2.6em;
     font-weight: var(--fw-bold);
     text-align: center;
-    margin: 20px;
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
-.subtitle {
+.question-block {
+    margin: 16px 0px;
+    margin: 1rem 0rem;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-title {
     color: var(--color3);
     font-weight: var(--fw-normal);
     font-size: 13px;
-    margin: 16px 0px;
 }
 
-.paragraph {
+.question-arrow {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.question-answer {
+    margin-top: 12px;
+    margin-top: 0.75rem;
+    padding-right: 24px;
+    padding-right: 1.5rem;
     color: var(--color4);
     display: none;
 }
@@ -78,10 +98,18 @@ main {
 }
 
 .footer {
-    font-size: 11px;
+    font-size: 12px;
+    font-size: 0.75rem;
     text-align: center;
+    color: var(--color7);
+    margin: 6px;
 }
 
 .footer a {
-    color: hsl(228, 45%, 44%);
+    color: inherit;
+    font-weight: var(--fw-bold);
+}
+
+.footer a:hover {
+    color: var(--color2);
 }
