@@ -1,4 +1,4 @@
-const arrows = document.querySelectorAll('.question-arrow');
+const arrows = document.querySelectorAll('[arrow]');
 
 arrows.forEach( (element) => {
     element.addEventListener('click', () => {
@@ -9,16 +9,16 @@ arrows.forEach( (element) => {
 
 function manipulateAnswer(arrow) {
     const questionBlock = arrow.parentNode.parentNode;
-    const paragraph = questionBlock.querySelector('.question-answer');
-    const subtitle = questionBlock.querySelector('.question-title');
+    const paragraph = questionBlock.querySelector('[answer]');
+    const question = questionBlock.querySelector('[question]');
 
     if (paragraph.style.display == "") {
         paragraph.style.display = "block";
         arrow.style.transform = "rotate(180deg)";
-        subtitle.style.fontWeight = "var(--fw-bold)";
+        question.style.fontWeight = "var(--fw-bold)";
     } else if (paragraph.style.display == "block") {
         paragraph.style.display = "";
         arrow.style.transform = "rotate(0deg)";
-        subtitle.style.fontWeight = "var(--fw-normal)";
+        question.style.fontWeight = "var(--fw-normal)";
     }
 }

@@ -29,6 +29,8 @@ main {
     place-content: center;
 }
 
+/* ---------- card ---------- */
+
 .card {
     width: 335px;
     background-color: white;
@@ -61,6 +63,8 @@ main {
     margin-bottom: 32px;
     margin-bottom: 2rem;
 }
+
+/* ---------- question blocks ---------- */
 
 .question-block {
     margin: 16px 0px;
@@ -96,6 +100,8 @@ main {
 .line {
     border: 1px solid var(--color7);
 }
+
+/* ---------- footer ---------- */
 
 .footer {
     font-size: 12px;
