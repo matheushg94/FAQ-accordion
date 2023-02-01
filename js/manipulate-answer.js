@@ -1,16 +1,17 @@
-const arrows = document.querySelectorAll('[arrow]');
+const questionHeaders = document.querySelectorAll('[question-header]');
 
-arrows.forEach( (element) => {
+questionHeaders.forEach( (element) => {
     element.addEventListener('click', () => {
         manipulateAnswer(element);
         fullWidthSizing();
     });
 });
 
-function manipulateAnswer(arrow) {
-    const questionBlock = arrow.parentNode.parentNode;
+function manipulateAnswer(questionHeader) {
+    const questionBlock = questionHeader.parentNode;
     const paragraph = questionBlock.querySelector('[answer]');
     const question = questionBlock.querySelector('[question]');
+    const arrow = questionBlock.querySelector('[arrow]');
 
     if (paragraph.style.display == "") {
         paragraph.style.display = "block";
