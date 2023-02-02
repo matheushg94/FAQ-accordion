@@ -1,18 +1,32 @@
 @charset "utf-8";
 
 .card {
-    width: 670px;
+    width: 800px;
     flex-flow: row nowrap;
 }
 
 .img-container {
-    flex-basis: 335px;
-    border: 1px solid red;
+    flex-basis: 350px;
     height: 100%;
-    background: url(../images/bg-pattern-desktop.svg) no-repeat left;
 }
 
-img {
-    left: -50%;
+.img {
+    width: 100%;
+    left: 35%;
     top: 50%;
+}
+
+.img-background {
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 35%;
+    background: url(../images/bg-pattern-desktop.svg) no-repeat;
+    background-size: 100%;
+}
+
+.content {
+    flex-basis: 450px;
+    padding: 60px;
 }

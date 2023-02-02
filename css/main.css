@@ -41,20 +41,25 @@ main {
 }
 
 .img-container {
-    height: 150px;
+    height: 125px;
     position: relative;
-    background: url(../images/bg-pattern-mobile.svg) no-repeat center;
 }
 
 .img {
-    width: 71%;
+    width: 240px;
     position: absolute;
     transform: translate(-50%, -50%);
+    top: -15%;
     left: 50%;
 }
 
+.img-background {
+    height: 100%;
+    background: url(../images/bg-pattern-mobile.svg) no-repeat top;
+}
+
 .content {
-    padding: 0px 30px 40px 30px;
+    padding: 25px 25px 50px 25px;
 }
 
 .title {
