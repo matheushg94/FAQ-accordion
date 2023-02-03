@@ -91,6 +91,10 @@ main {
     font-size: 13px;
 }
 
+.question-title:hover {
+    color: var(--color2);
+}
+
 .question-answer {
     margin-top: 12px;
     margin-top: 0.75rem;
