@@ -3,7 +3,7 @@ const questionHeaders = document.querySelectorAll('[question-header]');
 questionHeaders.forEach( (element) => {
     element.addEventListener('click', () => {
         manipulateAnswer(element);
-        fullWidthSizing();
+        fullWidthSizing(); //calling this function to adjust the width whenever the side scrollbar appears
     });
 });
 
