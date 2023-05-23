@@ -54,7 +54,7 @@ main {
 }
 
 .img-background {
-    height: 100%;
+    height: 125px;
     background: url(../images/bg-pattern-mobile.svg) no-repeat top;
 }
 
